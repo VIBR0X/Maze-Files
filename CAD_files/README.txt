@@ -1,1 +1,0 @@
-DIY Maze Game printable parts by rbuehlma on Thingiverse: https://www.thingiverse.com/thing:5617629
