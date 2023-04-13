@@ -9,18 +9,21 @@ int servoVal;
   
 void setup() 
 {
-  servo1.attach(4);
-  servo2.attach(3);
+  servo1.attach(8);
+  servo2.attach(9);
+  Serial.begin(9600);
 }
   
 void loop()
 {
   
   servoVal = analogRead(joyX);
-  servoVal = map(servoVal, 0, 1023, 0, 20);
+  //Serial.println(servoVal);
+  servoVal = map(servoVal, 200, 800, 0, 50);
   servo1.write(servoVal);
-
+  
   servoVal = analogRead(joyY);
-  servoVal = map(servoVal,0, 1023, 0 , 20);
+  servoVal = map(servoVal, 200, 800, 0 , 50);
+  Serial.println(servoVal);
   servo2.write(servoVal);
 }
